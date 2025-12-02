@@ -91,19 +91,30 @@
     </div>
   </div>
 
-  <!-- Gallery Modal (after TRY ALL) -->
-  <div id="gallery-modal">
-    <div class="gallery-content">
-      <button id="gallery-close">&times;</button>
-      <h2>Your Looks Gallery</h2>
-      <img id="gallery-main" src="" alt="Selected look" />
-      <div id="gallery-thumbs"></div>
-      <div class="gallery-buttons">
-        <button onclick="downloadAllImages()">Download All</button>
-        <button onclick="shareCurrentFromGallery()">Share</button>
+  <!-- GALLERY MODAL -->
+<div id="gallery-modal">
+  <div class="gallery-content">
+
+    <button id="gallery-close">×</button>
+
+    <!-- Layout with big image + side slider -->
+    <div id="gallery-layout">
+      <img id="gallery-main" />
+
+      <div id="gallery-side-slider">
+        <div id="gallery-thumbs"></div>
       </div>
     </div>
+
+    <!-- Buttons below gallery -->
+    <div class="gallery-buttons">
+      <button onclick="downloadAllImages()">Download All</button>
+      <button onclick="shareCurrentFromGallery()">Share</button>
+    </div>
+
   </div>
+</div>
+
 
   <!-- JSZip + FileSaver for ZIP download -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
