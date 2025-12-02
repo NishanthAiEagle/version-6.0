@@ -28,7 +28,7 @@ let lastSnapshotDataURL = '';
 
 /* Placement Tuning */
 const NECK_SCALE_MULTIPLIER   = 1.15;
-const NECK_Y_OFFSET_FACTOR    = 0.60;
+const NECK_Y_OFFSET_FACTOR    = 0.95;
 const NECK_X_OFFSET_FACTOR    = 0.00;
 
 /* Smoothing constants */
